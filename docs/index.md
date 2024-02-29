@@ -6,4 +6,4 @@ I personally use this for documenting my lectures. Feel free to read.
 
 Hi, my name is Syahrul Afif Tri Anggara.
 I study at Universitas Gadjah Mada.
-This is a way so I can take a note while also learning for website programming.
+I made this website so I can take a note while also learning for website programming.

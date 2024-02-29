@@ -1,9 +1,8 @@
-# Analisis Variabel Kompleks
-## Analisis Variabel Kompleks-3
-### 1. Function of a complex variable
+# **Lecture 3: Analisis Variabel Kompleks**
+## **1. Function of a complex variable**
 Let S be a set complex numbers. A function f defined on S is a rule that assigns to each z in S a complex number w.
 
-![funct1](../../assets/images/func1.png)
+![funct1](../../../assets/images/func1.png)
 
 Suppose that $ w = u + iv $ is the value of a function $f$ at $z = x + iy$, so that
 $$ u + iv = f(x+iy) $$
@@ -47,7 +46,7 @@ $$ f(z) = |z|^2 = x^2 + y^2 + i0 $$
 * **Multiple-valued function**
   
       A generalization of the concept of function is a rule that assigns more than one value to a point z in the domain of definition.
-![func2](../../assets/images/func2.png)
+![func2](../../../assets/images/func2.png)
 
 * **Example**
    
@@ -56,9 +55,9 @@ $$ z^{1/2} = \pm \sqrt{r} \exp(i \frac{\theta}{2}) $$
 If we just choose only the positive value of $\pm \sqrt{r}$
 $$ z^{1/2} = \sqrt{r} \exp(i \frac{\theta}{2}), r > 0 $$
 
-### 2. Mappings
+## **2. Mappings**
 * **Graphs of Real-value function**
-![rmap1](../../assets/images/rmap1.png)
+![rmap1](../../../assets/images/rmap1.png)
 !!! note "Note"
 
     Note that both $x$ and $f(x)$ are real values.
@@ -66,25 +65,25 @@ $$ z^{1/2} = \sqrt{r} \exp(i \frac{\theta}{2}), r > 0 $$
 * **Complex-value functions**
 
 $$ f(z) = f(x+yi) = u(x,y) + iv(x,y) $$
-![Mapping1](../../assets/images/mapping1.png){align=center}
+![Mapping1](../../../assets/images/mapping1.png){align=center}
 !!! note "Note"
 
     Note that here $ x, y, u(x,y) $ and $ v(x,y) $ are all real values.
 * **Examples**
 
-![Mappping2](../../assets/images/mapping2.png){align=center}
+![Mappping2](../../../assets/images/mapping2.png){align=center}
 
 * **Examples**
 
 $$ w = iz = i(re^{i\theta}) = r \exp(i(\theta+\frac{\pi}{2})) $$
 
-![Mapping3](../../assets/images/mapping3.png)
+![Mapping3](../../../assets/images/mapping3.png)
 
 * **Example 1**
 
 <p style="text-align: center;"> $ w = u(x,y) + jv(x,y)$, where $ u = x^2 - y^2 $, $ v = 2xy $</p>
 
-![exmap1](../../assets/images/exmap1.png)
+![exmap1](../../../assets/images/exmap1.png)
 
 * **explanation:**
     * for $ c_1 > 0, x^2 - y^2 = c_1$ is mapped onto the line $ u = c_1 $
@@ -96,7 +95,7 @@ $$ w = iz = i(re^{i\theta}) = r \exp(i(\theta+\frac{\pi}{2})) $$
 * **Example 2**
 
 The domain $ x>0, y>0, xy<1 $ consists of all points lying on the upper branches of hyperbolas 
-![exmap2](../../assets/images/exmap2.png)
+![exmap2](../../../assets/images/exmap2.png)
 
 {==
 
@@ -107,7 +106,7 @@ The domain $ x>0, y>0, xy<1 $ consists of all points lying on the upper branches
 * **Example 3**
 
 $ w = z^2 = r^2e^{i2\theta} $ <span style="color: blue;"> &emsp;&emsp;In polar coordinate </span>
-![exmap3](../../assets/images/exmap3.png)
+![exmap3](../../../assets/images/exmap3.png)
 
 the mapping $ w = r^2 e^{j2\theta} = \rho e^{j\theta} $ where
 $$ \rho = r^2, \phi = 2\theta $$
@@ -117,7 +116,7 @@ $$ \rho = r^2, \phi = 2\theta $$
     * we map first quadrant onto the upper half plane $\rho \ge 0, 0 \le \phi \le \pi $
     * we map the upper half plane onto the entire $ w $ plane
 
-### 3. Mappings by the Exponential Function
+## **3. Mappings by the Exponential Function**
 * **Example 1**
 
 $ w = e^z = e^{x+iy} = $<mark> $e^x e^{iy}$ </mark> $ , z = x + iy $
@@ -125,19 +124,19 @@ $ w = e^z = e^{x+iy} = $<mark> $e^x e^{iy}$ </mark> $ , z = x + iy $
 
     Notice that, ==$ e^x e^{iy} $== is in a form $ \rho e^{i\theta}. $ Where, $\rho = e^x, \theta = y $
 
-![exmapf1](../../assets/images/exmapf1.png)
+![exmapf1](../../../assets/images/exmapf1.png)
 
 * **explanation:**
     * a vertical line $ x = c_1 $ is mapped into the circle of radius $ c_1 $
     * a horizontal line $ y = c_2 $ is mapped into the ray $ \phi = c_2 $
 
 * **Example 2**
-![exmapf2](../../assets/images/exmapf2.png)
+![exmapf2](../../../assets/images/exmapf2.png)
 
 * **Example 3**
-![exmapf3](../../assets/images/exmapf3.png)
+![exmapf3](../../../assets/images/exmapf3.png)
 
-### 3. Limits
+## **3. Limits**
 * For a given positive value $\epsilon$, there exists a positive value $\delta$ (depends on $\epsilon$) such that
 
 
@@ -145,7 +144,7 @@ $ w = e^z = e^{x+iy} = $<mark> $e^x e^{iy}$ </mark> $ , z = x + iy $
 
   meaning the point $ w=f(z) $ can be made arbitrarily close to $ w_0 $ if we choose the point $z$ close enough to $z_0$ but distinct from it.
 
-![lim1](../../assets/images/lim1.png)
+![lim1](../../../assets/images/lim1.png)
 
 **example:** let $ f(z) = 2j \bar z $, show that $\lim_{z\to 1} f(z) = 2j $ 
 
@@ -172,7 +171,7 @@ when $0<|z-1|<\delta(=2\epsilon)$
 
 $\Rightarrow 0<\frac{|z-1|}{2}<\epsilon \Rightarrow |f(z) - \frac{i}{2}| < \epsilon $
 <figure markdown="span">
-  ![exlim1](../../assets/images/exlim1.png){ width="500" }
+  ![exlim1](../../../assets/images/exlim1.png){ width="500" }
 </figure>
 
 * **Example 2**
@@ -184,14 +183,14 @@ $\Rightarrow 0<\frac{|z-1|}{2}<\epsilon \Rightarrow |f(z) - \frac{i}{2}| < \epsi
 
 **example:** let $f(z) = z/\bar{z} $
 
-![exlim2](../../assets/images/exlim2.png){align-left}
+![exlim2](../../../assets/images/exlim2.png){align-left}
 
 * if $ z = x $ then $ f(z) = \frac{x+j0}{x-j0} = 1 $ as $z \rightarrow 0, f(z) \rightarrow 1 $ along the real axis
 * if $ z = jy $ then $ f(z) = \frac{0+jy}{0-jy} = -1 $ as $z \rightarrow 0, f(z) \rightarrow -1 $ along the imaginary axis
 
 since a limit must be unique, we conclude that $ \lim_{z\to0} f(z) $ *does not* exist
 
-### 3.1 Theorems on Limits
+## **3.1 Theorems on Limits**
 
 **Theorem** suppose $ f(z) = u(x,y) + jv(x,y) $ and
 $$ z_0 = x_0 + jy_0, w_0 = u_0 + jv_0 $$
