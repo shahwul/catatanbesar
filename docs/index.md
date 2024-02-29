@@ -1,8 +1,9 @@
-# Home
+# **Profile**
+## **The Purpose**
 
-I personally use this for documenting my lectures. Feel free to read.
+I personally use this website for documenting my lecture notes. Feel free to read.
 
-## About Me
+## **About Me**
 
 Hi, my name is Syahrul Afif Tri Anggara.
 I study at Universitas Gadjah Mada.
