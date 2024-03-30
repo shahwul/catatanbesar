@@ -1,0 +1,1494 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write your documentation in Markdown and create a professional static site in minutes – searchable, customizable, in 60+ languages, for all devices">
+      
+      
+        <meta name="author" content="Syahrul Afif">
+      
+      
+        <link rel="canonical" href="https://shahwul.github.io/catatanbesar/Lecture_Notes/Semester_2/Analisis_Variabel_Kompleks/avk6/">
+      
+      
+        <link rel="prev" href="../avk5/">
+      
+      
+        <link rel="next" href="../../Fisika_Listrik_dan_Magnet/project1/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Lecture 6: Analisis Variabel Kompleks - Catatan Shahwul</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lecture-6-analisis-variabel-kompleks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Catatan Shahwul" class="md-header__button md-logo" aria-label="Catatan Shahwul" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Catatan Shahwul
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lecture 6: Analisis Variabel Kompleks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/shahwul/catatanbesar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shahwul/catatanbesar
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Profile
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Lecture Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Catatan Shahwul" class="md-nav__button md-logo" aria-label="Catatan Shahwul" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Catatan Shahwul
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/shahwul/catatanbesar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shahwul/catatanbesar
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Lecture Notes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lecture Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Semester 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Semester 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algoritma dan Struktur Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Algoritma dan Struktur Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algoritma_dan_Struktur_Data/asd2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 2: Algoritma dan Struktur Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Analisis Variabel Kompleks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analisis Variabel Kompleks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avk3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 3: Analisis Variabel Kompleks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avk4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 4: Analisis Variabel Tunggal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avk5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 5: Analisis Variabel Kompleks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lecture 6: Analisis Variabel Kompleks
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 6: Analisis Variabel Kompleks
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exponential-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logarithmic-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Component
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigonometric-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperbolic-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperbolic Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches-for-multi-valued-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branches for multi-valued functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivatives-of-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definite-integrals-of-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definite Integrals of Function
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fisika Listrik dan Magnet
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fisika Listrik dan Magnet
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Fisika_Listrik_dan_Magnet/project1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Probabilitas Variabel Acak
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Probabilitas Variabel Acak
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Probabilitas_Variabel_Acak/pva1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 1: Probabilitas Variabel Acak
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exponential-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logarithmic-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Component
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigonometric-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hyperbolic-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyperbolic Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches-for-multi-valued-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branches for multi-valued functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivatives-of-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definite-integrals-of-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definite Integrals of Function
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/shahwul/catatanbesar/edit/master/docs/Lecture_Notes/Semester_2/Analisis_Variabel_Kompleks/avk6.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/shahwul/catatanbesar/raw/master/docs/Lecture_Notes/Semester_2/Analisis_Variabel_Kompleks/avk6.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="lecture-6-analisis-variabel-kompleks"><strong>Lecture 6: Analisis Variabel Kompleks</strong></h1>
+<h2 id="exponential-function"><strong>Exponential Function</strong></h2>
+<p>from <span class="arithmatex">\(z=x+j y\)</span>, an exponential function is defined as </p>
+<div class="arithmatex">\[  
+f(z)=e^{z}=e^{x} \cos y+j e^{x} \sin y  
+\]</div>
+<p><strong>Properties</strong>  </p>
+<ul>
+<li><span class="arithmatex">\(f(z)=e^{z}\)</span> is analytic everywhere on <span class="arithmatex">\(\mathbf{C}\)</span><br />
+<span class="arithmatex">\(\left(e^{z}\right.\)</span> is entire)  </li>
+<li><span class="arithmatex">\(f^{\prime}(z)=e^{z}\)</span>  </li>
+<li><span class="arithmatex">\(e^{z+w}=e^{z} e^{w}, \quad z, w \in \mathbf{C}\)</span><br />
+(addition formula)  </li>
+<li><span class="arithmatex">\(\left|e^{z}\right|=e^{x}\)</span> and <span class="arithmatex">\(\arg \left(e^{z}\right)=y+2 n \pi \quad(n=0, \pm 1, \pm 2, \ldots)\)</span><br />
+<span class="arithmatex">\(\left(\right.\)</span> so <span class="arithmatex">\(\left.e^{z} \neq 0\right)\)</span>  </li>
+<li>if <span class="arithmatex">\(z\)</span> is pure imaginary, then <span class="arithmatex">\(e^{z}\)</span> is periodic</li>
+</ul>
+<h2 id="logarithmic-function"><strong>Logarithmic Function</strong></h2>
+<p>the definition of <span class="arithmatex">\(\log\)</span> function is based on solving  </p>
+<div class="arithmatex">\[  
+e^{w}=z  
+\]</div>
+<p>for <span class="arithmatex">\(w\)</span> where <span class="arithmatex">\(z\)</span> is any nonzero complex number, and we call <span class="arithmatex">\(w=\log z\)</span> write <span class="arithmatex">\(z=r e^{j \Theta}(-\pi&lt;\Theta \leq \pi)\)</span> and <span class="arithmatex">\(w=u+j v\)</span>, so we have </p>
+<div class="arithmatex">\[  
+e^{u}=r, \quad v=\Theta+2 n \pi  
+\]</div>
+<p>thus the definition of the (multiple-valued) logarithmic function of <span class="arithmatex">\(z\)</span> is  </p>
+<div class="arithmatex">\[  
+\log z=\log r+i(\Theta+2 n \pi), \quad(n=0, \pm 1, \pm 2, \ldots)  
+\]</div>
+<p>if only the principle value of <span class="arithmatex">\(\arg z\)</span> is used <span class="arithmatex">\((n=0)\)</span>, then <span class="arithmatex">\(\log z\)</span> is single-valued</p>
+<p>the principal value of <span class="arithmatex">\(\log z\)</span> is defined as</p>
+<div class="arithmatex">\[  
+\log z=\log r+i \operatorname{Arg} z  
+\]</div>
+<p>where <span class="arithmatex">\(r=|z|\)</span> and recall that <span class="arithmatex">\(\operatorname{Arg} z\)</span> is the principal argument of <span class="arithmatex">\(z\)</span>  </p>
+<ul>
+<li><span class="arithmatex">\(\log z\)</span> is single-valued  </li>
+<li><span class="arithmatex">\(\log z=\log z+j 2 n \pi, \quad(n=0, \pm 1, \pm 2, \ldots)\)</span>  </li>
+</ul>
+<p><strong>note:</strong> when <span class="arithmatex">\(z\)</span> is complex, one should not jump into the conclusion that  </p>
+<div class="arithmatex">\[  
+\log \left(e^{z}\right)=z  
+\]</div>
+<p>(log is multiple-valued)<br />
+instead, if <span class="arithmatex">\(z=x+j y\)</span>, we should write</p>
+<div class="arithmatex">\[  
+\begin{aligned}  
+\log \left(e^{z}\right) &amp; =\log \left|e^{z}\right|+j\left(\operatorname{Arg}\left(e^{z}\right)+2 n \pi\right)=\log \left|e^{x}\right|+j(y+2 n \pi) \\  
+&amp; =z+j 2 n \pi \quad(n=0, \pm 1, \pm 2, \ldots)  
+\end{aligned}  
+\]</div>
+<p><strong>example:</strong> find <span class="arithmatex">\(\log z\)</span> for <span class="arithmatex">\(z=-1+j, z=1\)</span>, and <span class="arithmatex">\(z=-1\)</span>  </p>
+<ul>
+<li>if <span class="arithmatex">\(z=-1+j\)</span> then <span class="arithmatex">\(r=\sqrt{2}\)</span> and <span class="arithmatex">\(\operatorname{Arg} z=3 \pi / 4\)</span> </li>
+</ul>
+<div class="arithmatex">\[  
+\begin{aligned}  
+\log z &amp; =\log \sqrt{2}+j(3 \pi / 4+2 n \pi), \quad(n=0, \pm 1, \pm 2, \ldots) \\  
+\log z &amp; =\log \sqrt{2}+j 3 \pi / 4  
+\end{aligned}  
+\]</div>
+<ul>
+<li>if <span class="arithmatex">\(z=1\)</span> then <span class="arithmatex">\(r=1\)</span> and <span class="arithmatex">\(\operatorname{Arg} z=0\)</span> </li>
+</ul>
+<div class="arithmatex">\[  
+\begin{align*}  
+\log z &amp; =0+j 2 n \pi=j 2 n \pi, \quad(n=0, \pm 1, \pm 2, \ldots) \\  
+\log z &amp; =0 \quad \text { (as expected) }  
+\end{align*}  
+\]</div>
+<ul>
+<li>if <span class="arithmatex">\(z=-1\)</span> then <span class="arithmatex">\(r=1\)</span> and <span class="arithmatex">\(\operatorname{Arg} z=\pi\)</span>  </li>
+</ul>
+<div class="arithmatex">\[  
+\log z=\log 1+j(\pi+2 n \pi)=j(2 n+1) \pi, \quad(n=0, \pm 1, \pm 2, \ldots)  
+\]</div>
+<p><span class="arithmatex">\(\log z=j \pi=j \quad\)</span> (now we can find <span class="arithmatex">\(\log\)</span> of a negative number)</p>
+<h2 id="complex-component"><strong>Complex Component</strong></h2>
+<p>let <span class="arithmatex">\(z \neq 0\)</span> and <span class="arithmatex">\(c\)</span> be any complex number, the function <span class="arithmatex">\(z^{c}\)</span> is defined via</p>
+<div class="arithmatex">\[  
+z^{c}=e^{c \log z}  
+\]</div>
+<p>where <span class="arithmatex">\(\log z\)</span> is the multiple-valued logarithmic function<br />
+let <span class="arithmatex">\(\Theta\)</span> be the principal value of <span class="arithmatex">\(\arg z\)</span> and let <span class="arithmatex">\(c=a+j b\)</span>  </p>
+<div class="arithmatex">\[  
+z^{c}=e^{c \log z}=e^{(a+j b)(\log |z|+j(\Theta+2 n \pi))}, \quad(n=0, \pm 1, \pm 2, \ldots)  
+\]</div>
+<p><strong>example:</strong> find <span class="arithmatex">\(j^{j}\)</span>  </p>
+<div class="arithmatex">\[  
+j^{j}=e^{j(\log j)}=e^{j(\log 1+j(\pi / 2+2 n \pi))}=e^{-(1 / 2+2 n) \pi}, \quad(n=0, \pm 1, \pm 2, \ldots)  
+\]</div>
+<p>(complex power of a complex can become real numbers)  </p>
+<p><strong>more example:</strong> the values of <span class="arithmatex">\(j^{-j}\)</span> are given by  </p>
+<div class="arithmatex">\[  
+j^{-j}=e^{-j(\log j)}=e^{-j(\log 1+j(\pi / 2+2 m \pi))}=e^{(1 / 2+2 m) \pi}, \quad(m=0, \pm 1, \pm 2, \ldots)  
+\]</div>
+<p>if we multiply the values of <span class="arithmatex">\(j^{j}\)</span> by those of <span class="arithmatex">\(j^{-j}\)</span> we obtain infinitely many values of  </p>
+<div class="arithmatex">\[  
+e^{2 k \pi}, \quad-\infty&lt;k&lt;\infty  
+\]</div>
+<p>thus, the usual algebraic rules do not apply to <span class="arithmatex">\(z^{c}\)</span> when they are multi-valued !  </p>
+<div class="arithmatex">\[  
+\left(j^{j}\right) \cdot\left(j^{-j}\right) \neq j^{0}=1  
+\]</div>
+<h2 id="trigonometric-function"><strong>Trigonometric Function</strong></h2>
+<p>by using Euler's formula<br />
+<span class="arithmatex">\(e^{j x}=\cos x+j \sin x, \quad\)</span> for any real number <span class="arithmatex">\(x\)</span><br />
+we can write  </p>
+<div class="arithmatex">\[  
+\sin x=\frac{e^{j x}-e^{-j x}}{2 j}, \quad \cos x=\frac{e^{j x}+e^{-j x}}{2}  
+\]</div>
+<p>hence, it is natural to define trigonometric functions of a complex number <span class="arithmatex">\(z\)</span> as  </p>
+<div class="arithmatex">\[  
+\begin{array}{l}  
+\sin z=\frac{e^{j z}-e^{-j z}}{2 j}, \quad \cos z=\frac{e^{j z}+e^{-j z}}{2}, \tan z=\frac{\sin z}{\cos z} \\  
+\csc z=\frac{1}{\sin z}, \quad \sec z=\frac{1}{\cos z}, \quad \cot z=\frac{1}{\tan z} \\  
+\end{array}  
+\]</div>
+<p>(use <span class="arithmatex">\(\frac{d}{d z} e^{j z}=j e^{j z}\)</span> )<br />
+(sine is odd and cosine is even)<br />
+<strong>Properties</strong></p>
+<ul>
+<li><span class="arithmatex">\(\sin z\)</span> and <span class="arithmatex">\(\cos z\)</span> are entire functions (since <span class="arithmatex">\(e^{j z}\)</span> and <span class="arithmatex">\(e^{-j z}\)</span> are entire)  </li>
+<li><span class="arithmatex">\(\frac{d}{d z} \sin z=\cos z\)</span> and <span class="arithmatex">\(\frac{d}{d z} \cos z=-\sin z\)</span>  </li>
+</ul>
+<p><strong>Properties</strong>  </p>
+<ul>
+<li><span class="arithmatex">\(\sin z\)</span> and <span class="arithmatex">\(\cos z\)</span> are entire functions (since <span class="arithmatex">\(e^{j z}\)</span> and <span class="arithmatex">\(e^{-j z}\)</span> are entire)  </li>
+<li><span class="arithmatex">\(\frac{d}{d z} \sin z=\cos z\)</span> and <span class="arithmatex">\(\frac{d}{d z} \cos z=-\sin z\)</span> - <span class="arithmatex">\(\sin (-z)=-\sin z\)</span> and <span class="arithmatex">\(\cos (-z)=\cos z\)</span> - <span class="arithmatex">\(\sin (z+2 \pi)=\sin z\)</span> and <span class="arithmatex">\(\sin (z+\pi)=-\sin z\)</span>  </li>
+<li><span class="arithmatex">\(\cos (z+2 \pi)=\cos z\)</span> and <span class="arithmatex">\(\cos (z+\pi)=-\cos z\)</span>  </li>
+<li><span class="arithmatex">\(\sin (z+\pi / 2)=\cos z\)</span> and <span class="arithmatex">\(\sin (z-\pi / 2)=-\cos z\)</span>  </li>
+<li><span class="arithmatex">\(\sin (z+w)=\sin z \cos w+\cos z \sin w\)</span>  </li>
+<li><span class="arithmatex">\(\cos (z+w)=\cos z \cos w-\sin z \sin w\)</span></li>
+</ul>
+<h2 id="hyperbolic-function"><strong>Hyperbolic Function</strong></h2>
+<p>the hyperbolic sine, cosine, and tangent of a complex number are defined as  </p>
+<div class="arithmatex">\[  
+\sinh z=\frac{e^{z}-e^{-z}}{2}, \quad \cosh z=\frac{e^{z}+e^{-z}}{2}, \quad \tanh z=\frac{\sinh z}{\cosh z}  
+\]</div>
+<p>(as they are with a real variable)<br />
+<strong>Properties</strong></p>
+<ul>
+<li><span class="arithmatex">\(\sinh z\)</span> and <span class="arithmatex">\(\cosh z\)</span> are entire<br />
+(since <span class="arithmatex">\(e^{z}\)</span> and <span class="arithmatex">\(e^{-z}\)</span> are entire)  </li>
+<li><span class="arithmatex">\(\tanh z\)</span> is analytic in every domain in which <span class="arithmatex">\(\cosh z \neq 0\)</span>  </li>
+<li><span class="arithmatex">\(\frac{d}{d z} \sinh z=\cosh z\)</span> and <span class="arithmatex">\(\frac{d}{d z} \cosh z=\sinh z\)</span>  </li>
+<li><span class="arithmatex">\(\frac{d}{d z} \tanh z=\operatorname{sech}^{2} z\)</span>  </li>
+</ul>
+<h2 id="branches-for-multi-valued-functions"><strong>Branches for multi-valued functions</strong></h2>
+<p>we often need to investigate the differentiability of a function <span class="arithmatex">\(f\)</span>  </p>
+<div class="arithmatex">\[  
+f^{\prime}(z)=\lim _{\Delta z \rightarrow 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}  
+\]</div>
+<p>what happen if <span class="arithmatex">\(f\)</span> is multiple-valued (like <span class="arithmatex">\(\arg z, z^{c}\)</span> )?  </p>
+<ul>
+<li>have to make sure if the two funtion values tend to the same value in the limit  </li>
+<li>have to choose one of the function values in a consistent way  </li>
+</ul>
+<p>restricting the values of a multiple-valued functions to make it single-valued in some region is called choosing a branch of the function<br />
+a branch of <span class="arithmatex">\(f\)</span> is any single-valued function <span class="arithmatex">\(F\)</span> that is analytic in some domain</p>
+<p>we define the principal branch <span class="arithmatex">\(\log\)</span> of the lograrithmic function as  </p>
+<div class="arithmatex">\[  
+\log z=\log |z|+j \operatorname{Arg}(z), \quad-\pi&lt;\operatorname{Arg}(z)&lt;\pi  
+\]</div>
+<p>where <span class="arithmatex">\(\operatorname{Arg}(z)\)</span> is the principle value of <span class="arithmatex">\(\arg (z)\)</span>  </p>
+<ul>
+<li><span class="arithmatex">\(\log z\)</span> is single-valued  </li>
+<li><span class="arithmatex">\(\log z\)</span> is not continuous along the negative real axis (because of <span class="arithmatex">\(\operatorname{Arg} z\)</span> ) </li>
+</ul>
+<div class="arithmatex">\[  
+\begin{array}{l}  
+z=-x+j \epsilon \Longrightarrow \operatorname{Arg} z \rightarrow \pi \quad \text { as } \epsilon \rightarrow 0 \\  
+z=-x-j \epsilon \Longrightarrow \operatorname{Arg} z \rightarrow-\pi \quad \text { as } \epsilon \rightarrow 0  
+\end{array}  
+\]</div>
+<p>a branch cut is portion of curve that is introduced to define a branch <span class="arithmatex">\(F\)</span> </p>
+<ul>
+<li>points on the branch cut for <span class="arithmatex">\(f\)</span> are singular points  </li>
+<li>the negative real axis is a branch cut for the Log function  </li>
+<li><span class="arithmatex">\(\log z\)</span> is single-valued and continuous in <span class="arithmatex">\(D=\mathbf{C} \backslash(-\infty, 0]\)</span> <span class="arithmatex">\(D=\mathrm{C} \backslash(-\infty, 0]\)</span> </li>
+</ul>
+<p>let <span class="arithmatex">\(z_{0}\)</span> be any point in <span class="arithmatex">\(D\)</span> and <span class="arithmatex">\(w_{0}=\log z_{0}\)</span> (or <span class="arithmatex">\(z_{0}=e^{w_{0}}\)</span> )  </p>
+<div class="arithmatex">\[  
+\begin{aligned}  
+\frac{d}{d z} \log z_{0} &amp; =\lim _{z \rightarrow z_{0}} \frac{w-w_{0}}{z-z_{0}}=\lim _{z \rightarrow z_{0}} \frac{1}{\frac{g-z_{0}}{w-w_{0}}}=\lim _{w \rightarrow w_{0}} \frac{1}{\frac{z-z_{0}}{w-w_{0}}} \\  
+&amp; =\lim _{w \rightarrow w_{0}} \frac{1}{\frac{e^{w}-e^{w_{0}}}{w-w_{0}}}=\frac{1}{\left.\frac{d}{d z} e^{w}\right|_{w=w_{0}}}=\frac{1}{e^{w_{0}}}=\frac{1}{z_{0}}  
+\end{aligned}  
+\]</div>
+<p>(we have used single-valuedness and continuity of the Log function)<br />
+<span class="arithmatex">\(\log z\)</span> is analytic in <span class="arithmatex">\(D\)</span></p>
+<p>other branches of <span class="arithmatex">\(\log z\)</span></p>
+<div class="arithmatex">\[  
+\begin{array}{l}  
+\log (z)=\log |z|+j \arg (z), \quad 0&lt;\arg (z)&lt;2 \pi \\  
+\log (z)=\log |z|+j \arg _{\tau}(z), \quad \tau&lt;\arg _{\tau}(z)&lt;\tau+2 \pi  
+\end{array}  
+\]</div>
+<p>a branch <span class="arithmatex">\(\log (z)\)</span> is analytic everywhere on <span class="arithmatex">\(D_{\tau}\)</span><br />
+any point that is common to all branch cuts of <span class="arithmatex">\(f\)</span> is called a branch point the origin is a branch point of the <span class="arithmatex">\(\log\)</span> function  </p>
+<p><strong>example:</strong> suppose we have to compute the derivative of  </p>
+<div class="arithmatex">\[  
+f(z)=\log \left(z^{2}-1\right) \text { at point } z=j  
+\]</div>
+<p>choose a branch of <span class="arithmatex">\(f\)</span> which is analytic in a region containing the point  </p>
+<div class="arithmatex">\[  
+j^{2}-1=-2  
+\]</div>
+<p>the principal branch is not analytic there, so we choose another branch<br />
+e.g., choose <span class="arithmatex">\(\log (z)=\log |z|+j \arg (z), 0&lt;\arg z&lt;2 \pi\)</span>; then by chain rule,  </p>
+<div class="arithmatex">\[  
+f^{\prime}(j)=\left.\frac{2 z}{z^{2}-1}\right|_{z=j}=\frac{2 j}{j^{2}-1}=-j  
+\]</div>
+<p>define the principal branch of <span class="arithmatex">\(z^{c}\)</span> to be  </p>
+<div class="arithmatex">\[  
+e^{c \log z}  
+\]</div>
+<p>where <span class="arithmatex">\(\log z\)</span> is the principal branch of <span class="arithmatex">\(\log z\)</span>  </p>
+<ul>
+<li>since the exponential function is entire, the principal branch of <span class="arithmatex">\(z^{c}\)</span> is analytic in <span class="arithmatex">\(D\)</span> where <span class="arithmatex">\(\log z\)</span> is analytic  </li>
+<li>using the chain rule  </li>
+</ul>
+<div class="arithmatex">\[  
+\left.\frac{d}{d z}\left(e^{c \log z}\right)\right|_{z=z_{0}}=e^{c \log z_{0}} \frac{c}{z_{0}}=\frac{c z_{0}^{c}}{z_{0}}=c z_{0}^{c-1}  
+\]</div>
+<p>provided that we use the same branch of <span class="arithmatex">\(z^{c}\)</span> on both sides of the equation <span class="arithmatex">\(\left(z^{a} z^{b}=z^{a+b}\right.\)</span> iff we use the same branch for the complex power on both sides)</p>
+<h2 id="derivatives-of-functions"><strong>Derivatives of Functions</strong></h2>
+<p>consider derivatives of complex-valued functions <span class="arithmatex">\(w\)</span> of a real variable <span class="arithmatex">\(t\)</span>  </p>
+<div class="arithmatex">\[  
+w(t)=u(t)+j v(t)  
+\]</div>
+<p>where <span class="arithmatex">\(u\)</span> and <span class="arithmatex">\(v\)</span> are real-valued functions of <span class="arithmatex">\(t\)</span> the derivative <span class="arithmatex">\(w^{\prime}(t)\)</span> or <span class="arithmatex">\(\frac{d}{d t} w(t)\)</span> is defined as  </p>
+<div class="arithmatex">\[  
+w^{\prime}(t)=u^{\prime}(t)+j v^{\prime}(t)  
+\]</div>
+<p>Properties many rules are carried over to complex-valued functions  </p>
+<ul>
+<li><span class="arithmatex">\([c w(t)]^{\prime}=c w^{\prime}(t)\)</span>  </li>
+<li><span class="arithmatex">\([w(t)+s(t)]^{\prime}=w^{\prime}(t)+s^{\prime}(t)\)</span>  </li>
+<li><span class="arithmatex">\([w(t) s(t)]^{\prime}=w^{\prime}(t) s(t)+w(t) s^{\prime}(t)\)</span>  </li>
+</ul>
+<p>mean-value theorem: no longer applies for complex-valued functions<br />
+suppose <span class="arithmatex">\(w(t)\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> and <span class="arithmatex">\(w^{\prime}(t)\)</span> exists<br />
+it is not necessarily true that there is a number <span class="arithmatex">\(c \in[a, b]\)</span> such that  </p>
+<div class="arithmatex">\[  
+w^{\prime}(c)=\frac{w(b)-w(a)}{b-a}  
+\]</div>
+<p>for example, <span class="arithmatex">\(w(t)=e^{j t}\)</span> on the interval <span class="arithmatex">\([0,2 \pi]\)</span> and we have <span class="arithmatex">\(w(2 \pi)-w(0)=0\)</span><br />
+however, <span class="arithmatex">\(\left|w^{\prime}(t)\right|=\left|j e^{j t}\right|=1\)</span>, which is never zero</p>
+<p>mean-value theorem: no longer applies for complex-valued functions<br />
+suppose <span class="arithmatex">\(w(t)\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> and <span class="arithmatex">\(w^{\prime}(t)\)</span> exists<br />
+it is not necessarily true that there is a number <span class="arithmatex">\(c \in[a, b]\)</span> such that </p>
+<div class="arithmatex">\[  
+w^{\prime}(c)=\frac{w(b)-w(a)}{b-a}  
+\]</div>
+<p>for example, <span class="arithmatex">\(w(t)=e^{j t}\)</span> on the interval <span class="arithmatex">\([0,2 \pi]\)</span> and we have <span class="arithmatex">\(w(2 \pi)-w(0)=0\)</span><br />
+however, <span class="arithmatex">\(\left|w^{\prime}(t)\right|=\left|j e^{j t}\right|=1\)</span>, which is never zero  </p>
+<h2 id="definite-integrals-of-function"><strong>Definite Integrals of Function</strong></h2>
+<p>the definite integral of a complex-valued function </p>
+<div class="arithmatex">\[  
+w(t)=u(t)+j v(t)  
+\]</div>
+<p>over an interval <span class="arithmatex">\(a \leq t \leq b\)</span> is defined as  </p>
+<div class="arithmatex">\[  
+\int_{a}^{b} w(t) d t=\int_{a}^{b} u(t) d t+j \int_{a}^{b} v(t) d t  
+\]</div>
+<p>provided that each integral exists (ensured if <span class="arithmatex">\(u\)</span> and <span class="arithmatex">\(v\)</span> are piecewise continuous)<br />
+Properties</p>
+<ul>
+<li><span class="arithmatex">\(\int_{a}^{b}[c w(t)+s(t)] d t=c \int_{a}^{b} w(t) d t+\int_{a}^{b} s(t) d t\)</span>  </li>
+<li><span class="arithmatex">\(\int_{a}^{b} w(t) d t=-\int_{b}^{a} w(t) d t\)</span>  </li>
+<li><span class="arithmatex">\(\int_{a}^{b} w(t) d t=\int_{a}^{c} w(t) d t+\int_{c}^{b} w(t) d t\)</span></li>
+</ul>
+<p><strong>Fundamental Theorem of Calculus:</strong> still holds for complex-valued functions<br />
+suppose  </p>
+<div class="arithmatex">\[  
+W(t)=U(t)+j V(t) \quad \text { and } \quad w(t)=u(t)+j v(t)  
+\]</div>
+<p>are continuous on <span class="arithmatex">\([a, b]\)</span><br />
+if <span class="arithmatex">\(W^{\prime}(t)=w(t)\)</span> when <span class="arithmatex">\(a \leq t \leq b\)</span> then <span class="arithmatex">\(U^{\prime}(t)=u(t)\)</span> and <span class="arithmatex">\(V^{\prime}(t)=v(t)\)</span><br />
+then the integral becomes  </p>
+<div class="arithmatex">\[  
+\int_{a}^{b} w(t) d t=\left.U(t)\right|_{a} ^{b}+\left.j V(t)\right|_{a} ^{b}=[U(b)+j V(b)]-[U(a)+j V(a)]  
+\]</div>
+<p>therefore, we obtain </p>
+<div class="arithmatex">\[  
+\int_{a}^{b} w(t) d t=W(b)-W(a)  
+\]</div>
+<p><strong>example:</strong> compute <span class="arithmatex">\(\int_{0}^{\pi / 6} e^{j 2 t} d t\)</span><br />
+since  </p>
+<div class="arithmatex">\[  
+\frac{d}{d t}\left(\frac{e^{j 2 t}}{j 2}\right)=e^{j 2 t}  
+\]</div>
+<p>the integral is given by </p>
+<div class="arithmatex">\[  
+\begin{aligned}  
+\int_{0}^{\pi / 6} e^{j 2 t} d t &amp; =\left.\frac{1}{j 2} e^{j 2 t}\right|_{0} ^{\pi / 6} \\  
+&amp; =\frac{1}{j 2}\left[e^{j \pi / 3}-e^{j 0}\right] \\  
+&amp; =\frac{\sqrt{3}}{4}+\frac{j}{4}  
+\end{aligned}  
+\]</div>
+<p>mean-value theorem for integration: not hold for complex-valued <span class="arithmatex">\(w(t)\)</span><br />
+it is not necessarily true that there exists <span class="arithmatex">\(c \in[a, b]\)</span> such that  </p>
+<div class="arithmatex">\[  
+\int_{a}^{b} w(t) d t=w(c)(b-a)  
+\]</div>
+<p>for example, <span class="arithmatex">\(w(t)=e^{j t}\)</span> for <span class="arithmatex">\(0 \leq t \leq 2 \pi\)</span><br />
+it is easy to see that  </p>
+<div class="arithmatex">\[  
+\int_{a}^{b} w(t) d t=\int_{0}^{2 \pi} e^{j t} d t=\left.\frac{e^{j t}}{j}\right|_{0} ^{2 \pi}=0  
+\]</div>
+<p>but there is no <span class="arithmatex">\(c \in[0,2 \pi]\)</span> such that <span class="arithmatex">\(w(c)=0\)</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../avk5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lecture 5: Analisis Variabel Kompleks">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Lecture 5: Analisis Variabel Kompleks
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../Fisika_Listrik_dan_Magnet/project1/" class="md-footer__link md-footer__link--next" aria-label="Next: Project1">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Project1
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

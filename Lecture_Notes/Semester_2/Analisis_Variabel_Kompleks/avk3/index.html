@@ -1,0 +1,1346 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write your documentation in Markdown and create a professional static site in minutes – searchable, customizable, in 60+ languages, for all devices">
+      
+      
+        <meta name="author" content="Syahrul Afif">
+      
+      
+        <link rel="canonical" href="https://shahwul.github.io/catatanbesar/Lecture_Notes/Semester_2/Analisis_Variabel_Kompleks/avk3/">
+      
+      
+        <link rel="prev" href="../../Algoritma_dan_Struktur_Data/asd2/">
+      
+      
+        <link rel="next" href="../avk4/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Lecture 3: Analisis Variabel Kompleks - Catatan Shahwul</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lecture-3-analisis-variabel-kompleks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Catatan Shahwul" class="md-header__button md-logo" aria-label="Catatan Shahwul" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Catatan Shahwul
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lecture 3: Analisis Variabel Kompleks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/shahwul/catatanbesar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shahwul/catatanbesar
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Profile
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Lecture Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Catatan Shahwul" class="md-nav__button md-logo" aria-label="Catatan Shahwul" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Catatan Shahwul
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/shahwul/catatanbesar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shahwul/catatanbesar
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Lecture Notes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lecture Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Semester 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Semester 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algoritma dan Struktur Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Algoritma dan Struktur Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algoritma_dan_Struktur_Data/asd2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 2: Algoritma dan Struktur Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Analisis Variabel Kompleks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analisis Variabel Kompleks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lecture 3: Analisis Variabel Kompleks
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 3: Analisis Variabel Kompleks
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-function-of-a-complex-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Function of a complex variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Mappings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mappings-by-the-exponential-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mappings by the Exponential Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Limits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-theorems-on-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Theorems on Limits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avk4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 4: Analisis Variabel Tunggal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avk5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 5: Analisis Variabel Kompleks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avk6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 6: Analisis Variabel Kompleks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fisika Listrik dan Magnet
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fisika Listrik dan Magnet
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Fisika_Listrik_dan_Magnet/project1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Probabilitas Variabel Acak
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Probabilitas Variabel Acak
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Probabilitas_Variabel_Acak/pva1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 1: Probabilitas Variabel Acak
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-function-of-a-complex-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Function of a complex variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Mappings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mappings-by-the-exponential-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mappings by the Exponential Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Limits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-theorems-on-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Theorems on Limits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/shahwul/catatanbesar/edit/master/docs/Lecture_Notes/Semester_2/Analisis_Variabel_Kompleks/avk3.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/shahwul/catatanbesar/raw/master/docs/Lecture_Notes/Semester_2/Analisis_Variabel_Kompleks/avk3.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="lecture-3-analisis-variabel-kompleks"><strong>Lecture 3: Analisis Variabel Kompleks</strong></h1>
+<h2 id="1-function-of-a-complex-variable"><strong>1. Function of a complex variable</strong></h2>
+<p>Let S be a set complex numbers. A function f defined on S is a rule that assigns to each z in S a complex number w.</p>
+<p><img alt="funct1" src="../../../../assets/images/func1.png" /></p>
+<p>Suppose that $ w = u + iv $ is the value of a function <span class="arithmatex">\(f\)</span> at <span class="arithmatex">\(z = x + iy\)</span>, so that
+$$ u + iv = f(x+iy) $$
+Thus each of real number u and v depends on the real variables x and y, meaning that
+$$ f(z) = u(x,y) + iv(x,y) $$
+Similarly if the polar coordinates r and θ, instead of x and y, are used, we get
+$$ f(z) = u(r,\theta) + iv(r,\theta) $$</p>
+<ul>
+<li><strong>Example</strong></li>
+</ul>
+<p>If <span class="arithmatex">\(f(z)=z^2\)</span>, then
+  case #1 : $ z = x + iy $
+  $$ f(z) = (x+iy)^2 = x^2 - y^2 + i2xy $$
+  $$ u(x,y) = x^2 - y^2 ; v(x,y) = 2xy $$</p>
+<p>case #2 : $ z = re^{i\theta} $
+  $$  f(z) = (re^{i\theta})^2 = r^2e^{i2\theta} = r^2 \cos 2\theta + ir^2 \sin 2\theta $$
+  $$ u(r,\theta) = r^2 \cos 2\theta ; v(r,\theta) = r^2 \sin 2\theta $$</p>
+<ul>
+<li><strong>Example</strong></li>
+</ul>
+<p>A real-valued function is used to illustrate some important concepts later in this chapter is
+$$ f(z) = |z|^2 = x^2 + y^2 + i0 $$</p>
+<ul>
+<li><strong>Polynomial function</strong>
+  $$ P(z) = a_0 + a_1z + a_2z^2 + \dots + a_nz^n $$
+  where n is zero or a positive integer and $ a_0, a_1, \dots a_n $ are complex constants, <span class="arithmatex">\(a_n\)</span> is not 0; </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The domain of definition is the entire z plane</p>
+</div>
+<ul>
+<li>
+<p><strong>Rational function</strong></p>
+<p>the quotients <span class="arithmatex">\(P(z)/Q(z)\)</span> of polynomials</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The domain of definition is <span class="arithmatex">\(Q(z)\neq0\)</span></p>
+</div>
+<ul>
+<li>
+<p><strong>Multiple-valued function</strong></p>
+<p>A generalization of the concept of function is a rule that assigns more than one value to a point z in the domain of definition.
+<img alt="func2" src="../../../../assets/images/func2.png" /></p>
+</li>
+<li>
+<p><strong>Example</strong></p>
+</li>
+</ul>
+<p>Let $ z $ denote any nonzero complex number, then <span class="arithmatex">\(z^{1/2}\)</span> has the two values 
+$$ z^{1/2} = \pm \sqrt{r} \exp(i \frac{\theta}{2}) $$
+If we just choose only the positive value of <span class="arithmatex">\(\pm \sqrt{r}\)</span>
+$$ z^{1/2} = \sqrt{r} \exp(i \frac{\theta}{2}), r &gt; 0 $$</p>
+<h2 id="2-mappings"><strong>2. Mappings</strong></h2>
+<ul>
+<li><strong>Graphs of Real-value function</strong>
+<img alt="rmap1" src="../../../../assets/images/rmap1.png" /></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that both <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(f(x)\)</span> are real values.</p>
+</div>
+<ul>
+<li><strong>Complex-value functions</strong></li>
+</ul>
+<p>$$ f(z) = f(x+yi) = u(x,y) + iv(x,y) $$
+<img align="center" alt="Mapping1" src="../../../../assets/images/mapping1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that here $ x, y, u(x,y) $ and $ v(x,y) $ are all real values.</p>
+</div>
+<ul>
+<li><strong>Examples</strong></li>
+</ul>
+<p><img align="center" alt="Mappping2" src="../../../../assets/images/mapping2.png" /></p>
+<ul>
+<li><strong>Examples</strong></li>
+</ul>
+<div class="arithmatex">\[ w = iz = i(re^{i\theta}) = r \exp(i(\theta+\frac{\pi}{2})) \]</div>
+<p><img alt="Mapping3" src="../../../../assets/images/mapping3.png" /></p>
+<ul>
+<li><strong>Example 1</strong></li>
+</ul>
+<p style="text-align: center;"> $ w = u(x,y) + jv(x,y)$, where $ u = x^2 - y^2 $, $ v = 2xy $</p>
+
+<p><img alt="exmap1" src="../../../../assets/images/exmap1.png" /></p>
+<ul>
+<li>
+<p><strong>explanation:</strong></p>
+<ul>
+<li>for $ c_1 &gt; 0, x^2 - y^2 = c_1$ is mapped onto the line $ u = c_1 $</li>
+<li>if $ u = c_1 $ then $ v = \pm\sqrt{y^2+c_1} $ , where $ -\infty &lt; y &lt; \infty $</li>
+<li>for $ c_2 &gt; 0, 2xy = c_2 $ is mapped into the line $ v = c_2 $</li>
+<li>if $ v = c_2 $ then $ u = {c_2^2}/{4y^2} - y^2 $ where $ -\infty &lt; y &lt; 0 $, or</li>
+<li>if $ v = c_2 $ then $ u = x^2 - {c_2^2}/{4x^2}, 0 &lt; x &lt; \infty $</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 2</strong></p>
+</li>
+</ul>
+<p>The domain $ x&gt;0, y&gt;0, xy&lt;1 $ consists of all points lying on the upper branches of hyperbolas 
+<img alt="exmap2" src="../../../../assets/images/exmap2.png" /></p>
+<mark class="critic block">
+<p style="text-align: center;">$ u = x^2 - y^2 ;$ <br/> $v = 2xy = 2 \Rightarrow xy = 1 $ </p>
+
+</mark>
+<ul>
+<li><strong>Example 3</strong></li>
+</ul>
+<p>$ w = z^2 = r^2e^{i2\theta} $ <span style="color: blue;"> &emsp;&emsp;In polar coordinate </span>
+<img alt="exmap3" src="../../../../assets/images/exmap3.png" /></p>
+<p>the mapping $ w = r^2 e^{j2\theta} = \rho e^{j\theta} $ where
+$$ \rho = r^2, \phi = 2\theta $$</p>
+<ul>
+<li><strong>explanation:</strong><ul>
+<li>the image is found by squaring the modulus by doubling the value <span class="arithmatex">\(\theta\)</span></li>
+<li>we map first quadrant onto the upper half plane $\rho \ge 0, 0 \le \phi \le \pi $</li>
+<li>we map the upper half plane onto the entire $ w $ plane</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-mappings-by-the-exponential-function"><strong>3. Mappings by the Exponential Function</strong></h2>
+<ul>
+<li><strong>Example 1</strong></li>
+</ul>
+<p>$ w = e^z = e^{x+iy} = $<mark> <span class="arithmatex">\(e^x e^{iy}\)</span> </mark> $ , z = x + iy $</p>
+<div class="admonition note inline end">
+<p class="admonition-title">Note</p>
+<p>Notice that, <mark>$ e^x e^{iy} $</mark> is in a form $ \rho e^{i\theta}. $ Where, $\rho = e^x, \theta = y $</p>
+</div>
+<p><img alt="exmapf1" src="../../../../assets/images/exmapf1.png" /></p>
+<ul>
+<li>
+<p><strong>explanation:</strong></p>
+<ul>
+<li>a vertical line $ x = c_1 $ is mapped into the circle of radius $ c_1 $</li>
+<li>a horizontal line $ y = c_2 $ is mapped into the ray $ \phi = c_2 $</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 2</strong>
+<img alt="exmapf2" src="../../../../assets/images/exmapf2.png" /></p>
+</li>
+<li>
+<p><strong>Example 3</strong>
+<img alt="exmapf3" src="../../../../assets/images/exmapf3.png" /></p>
+</li>
+</ul>
+<h2 id="3-limits"><strong>3. Limits</strong></h2>
+<ul>
+<li>For a given positive value <span class="arithmatex">\(\epsilon\)</span>, there exists a positive value <span class="arithmatex">\(\delta\)</span> (depends on <span class="arithmatex">\(\epsilon\)</span>) such that</li>
+</ul>
+<p style="text-align: center;"> when $ 0 <|z-z_0| < \delta $, we have $ |f(z)-w_0|< \epsilon $ </p>
+
+<p>meaning the point $ w=f(z) $ can be made arbitrarily close to $ w_0 $ if we choose the point <span class="arithmatex">\(z\)</span> close enough to <span class="arithmatex">\(z_0\)</span> but distinct from it.</p>
+<p><img alt="lim1" src="../../../../assets/images/lim1.png" /></p>
+<p><strong>example:</strong> let $ f(z) = 2j \bar z $, show that $\lim_{z\to 1} f(z) = 2j $ </p>
+<p>we must show that for <em>any</em> <span class="arithmatex">\(\epsilon &gt; 0\)</span>, we can <em>always</em> find $\delta &gt; 0 $ such that 
+$$ |z - 1| &lt; \delta \Rightarrow |2j \bar{z} - 2j| &lt; \epsilon $$
+if we express $ |2j \bar{z} - 2j| $ in terms of $ |z-1| $ by
+$$ |2j \bar{z} - 2j| = 2|\bar{z}-1| = 2|z-1| $$
+hence if $\delta = \epsilon/2 $ then
+$$ |f(z) - 2j| = 2|z-1| &lt; 2\delta &lt; \epsilon $$
+<span class="arithmatex">\(f(z)\)</span> can be made arbitrarily close <span class="arithmatex">\(2j\)</span> by making <span class="arithmatex">\(z\)</span> close to 1 enough</p>
+<p><mark>how close? determined by <span class="arithmatex">\(\delta\)</span> and <span class="arithmatex">\(\epsilon\)</span></mark></p>
+<ul>
+<li><strong>Example 1</strong></li>
+</ul>
+<p>Show that $f(z)=i\bar{z}/2 $ in the open disk <span class="arithmatex">\(|z|&lt;1\)</span>, then</p>
+<p><strong>Proof:</strong>
+$$ \lim_{z\to1} f(z)=\frac{i}{2} $$
+$$ |f(z)-\frac{i}{2}|=|\frac{i\bar {z} }{2} - \frac{i}{2}|=\frac{|i||\bar{z}-1|}{2}=\frac{|z-1|}{2} $$
+<span class="arithmatex">\(\forall \epsilon&gt;0, \exist \delta=2\epsilon, s.t.\)</span></p>
+<p>when <span class="arithmatex">\(0&lt;|z-1|&lt;\delta(=2\epsilon)\)</span></p>
+<p>$\Rightarrow 0&lt;\frac{|z-1|}{2}&lt;\epsilon \Rightarrow |f(z) - \frac{i}{2}| &lt; \epsilon $</p>
+<figure>
+  <img alt="exlim1" src="../../../../assets/images/exlim1.png" width="500" />
+</figure>
+<ul>
+<li><strong>Example 2</strong></li>
+</ul>
+<p><strong>Remarks:</strong></p>
+<ul>
+<li>when a limit of <span class="arithmatex">\(f(z)\)</span> exists at <span class="arithmatex">\(z_0\)</span> it is <strong>unique</strong></li>
+<li>if the limit exists, $ z \rightarrow z_0 $ means <span class="arithmatex">\(z\)</span> approaches <span class="arithmatex">\(z_0\)</span> in any arbitrary direction</li>
+</ul>
+<p><strong>example:</strong> let $f(z) = z/\bar{z} $</p>
+<p><img align-left="align-left" alt="exlim2" src="../../../../assets/images/exlim2.png" /></p>
+<ul>
+<li>if $ z = x $ then $ f(z) = \frac{x+j0}{x-j0} = 1 $ as $z \rightarrow 0, f(z) \rightarrow 1 $ along the real axis</li>
+<li>if $ z = jy $ then $ f(z) = \frac{0+jy}{0-jy} = -1 $ as $z \rightarrow 0, f(z) \rightarrow -1 $ along the imaginary axis</li>
+</ul>
+<p>since a limit must be unique, we conclude that $ \lim_{z\to0} f(z) $ <em>does not</em> exist</p>
+<h2 id="31-theorems-on-limits"><strong>3.1 Theorems on Limits</strong></h2>
+<p><strong>Theorem</strong> suppose $ f(z) = u(x,y) + jv(x,y) $ and
+$$ z_0 = x_0 + jy_0, w_0 = u_0 + jv_0 $$
+then <span class="arithmatex">\(\lim_{z\to z_0}f(z)=w_0\)</span> <em>if and only if</em>
+$$ \lim_{(x,y)\to(x_0,y_0)} u(x,y) = u_0 $$ 
+and 
+$$ \lim_{(x,y)\to(x_0,y_0)} v(x,y) = v_0 $$</p>
+<p><strong>Theorem</strong> suppose <span class="arithmatex">\(\lim_{z\to z_0} f(z) = w_0\)</span> and $\lim{z\to z_0} g(z) = c_0 $ then</p>
+<ul>
+<li>$ \lim_{z\to  z_0} [f(z)+g(z)] = w_0 + c_0 $</li>
+<li>$ \lim_{z\to  z_0} [f(z)g(z)] = w_0c_0 $</li>
+<li>$ \lim_{z\to  z_0} \frac{f(z)}{g(z)} = w_0/c_0  $ if $ c_0 \neq 0 $</li>
+</ul>
+<p>It is easy to verify the limits
+$$ \lim_{z\to z_0} c = c \qquad \lim_{z\to z_0} z = z_0 \qquad \lim_{z\to z_0} z^n = z_0^n (n = 1,2,...) $$ 
+For the polynomial 
+$$ P(z) = a_0 + a_1z + a_2z^2 + ... + a_nz^n $$
+We have that
+$$ \lim_{z\to z_0} P(z) = P(z_0) $$</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../Algoritma_dan_Struktur_Data/asd2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lecture 2: Algoritma dan Struktur Data">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Lecture 2: Algoritma dan Struktur Data
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../avk4/" class="md-footer__link md-footer__link--next" aria-label="Next: Lecture 4: Analisis Variabel Tunggal">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Lecture 4: Analisis Variabel Tunggal
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
